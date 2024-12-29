@@ -1,0 +1,246 @@
+@font-face {
+    font-family: inter;
+    src: url(../fonts/Inter-Light.woff2);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    overflow-x: hidden;
+}
+
+
+header h1 {
+    width: 100%;
+
+}
+
+
+header h2 {
+    margin-left: 24px;
+    font-size: 1.6em;
+    font-family: inter;
+    margin-bottom: 36px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Nav menu styling*/
+.navbar li {
+    margin-right: 0%;
+    display: inline;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    display: inline;
+    float: right;
+    margin-right: 24px;
+    font-size: large;
+}
+
+.navbar {
+    float: right;
+    position: absolute;
+    top: 24px;
+    right: 0px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0)
+}
+
+.navbar a:hover {
+    color: rgb(145, 150, 161);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*"logo" styling*/
+.logo {
+    font-size: large;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: -16px;
+}
+
+.logo1 {
+    font-size: large;
+    margin-left: 24px;
+    margin-top: 24px;
+    margin-bottom: 96px;
+}
+
+
+h2,
+h3 {
+    margin: 0;
+
+}
+
+h2 {
+    margin-left: 24px;
+}
+
+
+.center {
+    text-align: center;
+    margin-top: 108px;
+    color: rgb(0, 0, 0);
+    font-size: 1.3em;
+}
+
+.center:hover {
+    color: rgb(92, 92, 92);
+}
+
+footer {
+    margin-left: 24px;
+    margin-top: 108px;
+    margin-bottom: 24px;
+    font-size: 0.8em;
+}
+
+.venstre {
+    margin-left: 24px;
+    margin-bottom: 36px;
+    font-size: 2em;
+}
+
+.venstre2 {
+    margin-left: 24px;
+    margin-right: 12px;
+}
+
+.venstre3 {
+    margin-left: 24px;
+    margin-bottom: 512px;
+    font-size: 1.5em;
+    margin-top: -6px;
+    color: black;
+}
+
+/*styling af enkelte portfolio sider*/
+.speciel-side h1 {
+    font-size: 5em;
+}
+
+.speciel-side h2 {
+    font-size: 1em;
+    margin-bottom: 48px;
+    line-height: 28px;
+    margin-top: -24px;
+}
+
+.speciel-side h1,
+h2,
+h3,
+h4,
+p {
+    color: black;
+}
+
+.speciel-side:hover,
+h1,
+h2,
+h3,
+h4,
+p {
+    color: rgb(0, 0, 0);
+}
+
+/*styling af tekst*/
+.grey {
+    color: rgb(145, 150, 161);
+    margin-top: 6px;
+    margin-bottom: 100px;
+}
+
+.stor_tekst {
+    font-size: 1.2em;
+}
+
+.stor_overskrift {
+    font-size: 1.8em;
+    margin-top: 240px;
+    margin-bottom: 24px;
+}
+
+.stor_overskrift_speciel {
+    font-size: 1.8em;
+    margin-top: 72px;
+    margin-bottom: 24px;
+}
+
+.stor_overskrift2 {
+    font-size: 1.8em;
+    margin-top: 148px;
+    margin-bottom: 24px;
+}
+
+
+.sort_tekst {
+    font-size: 1.2em;
+}
+
+.link_tekst {
+    font-size: 1em;
+    color: rgb(145, 150, 161);
+    text-decoration: underline;
+    margin-top: -16px;
+    margin-bottom: 64px;
+}
+
+/*styling af links i bunden af siden*/
+.space {
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+
+/*styling af paragraphs på portfoliosider*/
+.mellemrum_under {
+    margin-bottom: -12px;
+}
+
+.mellemrum_under2 {
+    margin-bottom: 36px;
+}
+
+/*styling af billeder*/
+.lillebillede {
+    margin-top: 13px;
+}
+
+.lillebillede2 {
+    margin-top: 13px;
+}
+
+.stortbillede {
+    margin-right: 12px;
+}
+
+.lillebillede_speciel {
+    margin-top: 13px;
+    margin-bottom: -50px;
+}
+
+.lillebillede2_speciel {
+    margin-top: 13px;
+    margin-bottom: -50px;
+}
+
+.full-width-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
