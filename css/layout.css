@@ -1,3 +1,24 @@
+body{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.column img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.column1 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.column2 img {
+    max-width: 98%;
+    height: auto;
+}
+
+@media (width >= 768px) {
 
 .columns {
     display: grid;
@@ -8,11 +29,6 @@
     flex: 1 0 50%;
     margin-bottom: 50px;
     padding: 20px;
-}
-
-.column img {
-    width: 95%;
-    justify-content: center;
 }
 
 .column a{
@@ -31,21 +47,11 @@
     margin-right: 0px;
 }
 
-.column1 img {
-    max-width: 98%;
-    height: auto;
-}
-
 .column2 {
     color: rgb(136, 136, 136);
     flex: 1;
     text-align: center;
     margin-right: 12px;
-}
-
-.column2 img {
-    max-width: 96%;
-    height: auto;
 }
 
 .two-column-grid {
@@ -60,4 +66,5 @@
 .right-column {
     flex: 1;
     margin-right: 5em;
+}
 }

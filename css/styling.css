@@ -5,13 +5,8 @@
 
 body {
     font-family: inter;
-    max-width: 1400px;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-header h1 {
-    width: 100%;
 }
 
 header h2 {
@@ -23,13 +18,18 @@ header h2 {
 
 a {
     text-decoration: none;
-    color: inherit;
+}
+
+a p:hover{
+    transition: ease;
+    transition-duration: 0.2s;
+    color:rgb(90, 190, 105);
 }
 
 /*Navigation menu styling*/
 .navbar ul {
     list-style: none;
-    padding: 0;
+    padding-right: 2em;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -57,7 +57,7 @@ a {
 
 .navbar {
     position: absolute;
-    top: 25px;
+    top: 12px;
     right: 0;
 }
 
@@ -69,10 +69,11 @@ a {
     display: none;
     font-size: 1em;
     cursor: pointer;
+    margin-right: 25px;
 }
 
-/*Mobilformat burgermenu*/
-@media (max-width: 700px) {
+/*Burgermenu til mobilformat*/
+@media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
@@ -91,9 +92,9 @@ a {
     }
 
     .nav-links li {
-        margin: 10px 0;
+        margin: 5px 0;
         text-align: right;
-        padding-right: 15px;
+        padding-right: 20px;
     }
 
     .burger-menu {
@@ -124,6 +125,10 @@ a {
     margin-left: 25px;
     margin-top: 25px;
     margin-bottom: 95px;
+}
+
+.logo a{
+    color: black;
 }
 
 
@@ -157,7 +162,7 @@ footer {
 
 .venstre {
     margin-bottom: 35px;
-    margin-left: 25px;
+    margin-left: 20px;
     font-size: 2em;
 }
 
@@ -169,22 +174,22 @@ footer {
 }
 
 /*styling af enkelte portfolio sider*/
-.tema-side h1 {
+.tema_side h1 {
     font-size: 5em;
 }
 
-.tema-side h2 {
+.tema_side h2 {
     font-size: 1em;
     margin-bottom: 50px;
     line-height: 30px;
     margin-top: -25px;
 }
 
-.tema-side h1,h2,h3,h4,p {
+.tema_side h1,h2,h3,h4,p {
     color: black;
 }
 
-.tema-side:hover,h1,h2,h3,h4,p {
+.tema_side:hover,h1,h2,h3,h4,p {
     color: rgb(0, 0, 0);
 }
 
@@ -192,7 +197,7 @@ footer {
 .grey {
     color: rgb(145, 150, 161);
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .stor_tekst {
@@ -214,8 +219,8 @@ footer {
 
 .stor_overskrift2 {
     font-size: 1.8em;
-    margin-top: 145px;
-    margin-bottom: 25px;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 .sort_tekst {
@@ -265,57 +270,61 @@ footer {
     margin-bottom: -50px;
 }
 
-.full-width-image img {
+.full_width_image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-.portræt{
-    max-width: 400px;
-}
-
 /*om mig styling*/
-.container {
+.om_mig {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.venstre-section {
+.venstre_section {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.venstre-section img {
-    max-width: 300px;
-    object-fit: cover;
+.venstre_section img {
+    max-width: 100%;
     margin-bottom: 10px;
+    border-bottom: solid black;
+    border-width: 1px;
+    padding-bottom: 20px;
 }
 
-.venstre-section p {
-    text-align: center;
-}
-
-.højre-section {
+.højre_section {
     display: flex;
     flex-direction: column;
+    border-left: solid black;
+    border-width: 1px;
+    padding-left: 20px;
 }
 
-.cv-section {
+.cv_section {
     margin-bottom: 20px;
 }
 
-.cv-section h3 {
+.cv_section h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 25px;
 }
 
-.cv-section p {
-    margin: 5px 0 0;
+.cv_section p {
+    margin-right: 5px;
 }
 
-.kontakt-info a:hover {
+.kontakt a{
+    color: black;
+}
+
+.kontakt a:hover {
     text-decoration: underline;
+    color:rgb(90, 190, 105);
 }
