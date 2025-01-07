@@ -1,11 +1,12 @@
 body{
     max-width: 1400px;
     margin: auto;
+    overflow-x: hidden;
 }
 
 .column img {
     max-width: 100%;
-    margin: 0 auto;
+    margin-top: 10px;
 }
 
 .column1 img {
@@ -28,7 +29,6 @@ body{
 .column {
     flex: 1 0 50%;
     margin-bottom: 50px;
-    padding: 20px;
 }
 
 .column a{

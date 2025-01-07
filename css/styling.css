@@ -58,33 +58,71 @@ a p:hover{
 .navbar {
     position: absolute;
     top: 12px;
-    right: 0;
+    right: -20px;
 }
 
-.burger-toggle {
-    display: none;
-}
-
-.burger-menu {
-    display: none;
-    font-size: 1em;
-    cursor: pointer;
-    margin-right: 25px;
-}
-
-/*Burgermenu til mobilformat*/
 @media (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        position: relative;
+        right: 1.5em;
+        top: 17px;
+    }
+
+    .burger-menu:hover .line {
+        transition: ease;
+        transition-duration: 0.2s;
+        background-color: rgb(90, 190, 105);
+    }
+    
+    .line {
+        height: 3px;
+        width: 90%;
+        background-color: black;
+        transition: transform 0.3s ease, opacity 0s ease;
+        position: absolute;
+    }
+    
+    .line:nth-child(1) {
+        top: 0;
+    }
+    
+    .line:nth-child(2) {
+        top: 8px;
+    }
+    
+    .line:nth-child(3) {
+        top: 16px;
+    }
+    
+    .burger-menu.open .line:nth-child(1) {
+        transform: rotate(45deg);
+        top: 8px;
+    }
+    
+    .burger-menu.open .line:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .burger-menu.open .line:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 8px;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
         background-color: rgb(255, 255, 255);
         position: absolute;
-        top: 60px;
-        right: 0;
-        width: 200px;
+        top: 40px;
+        right: 10px;
+        width: 125px;
         box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     }
-
     .nav-links ul {
         flex-direction: column;
         margin: 0;
@@ -93,21 +131,10 @@ a p:hover{
 
     .nav-links li {
         margin: 5px 0;
-        text-align: right;
-        padding-right: 20px;
+        text-align: center;
     }
 
-    .burger-menu {
-        display: block;
-    }
-
-    .burger-menu:hover{
-        transition: ease;
-        transition-duration: 0.2s;
-        color:rgb(90, 190, 105);
-    }
-
-    .burger-toggle:checked + .burger-menu + .nav-links {
+    .nav-links.show {
         display: flex;
     }
 }
@@ -160,10 +187,15 @@ footer {
     font-size: 0.8em;
 }
 
+.column{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .venstre {
     margin-bottom: 35px;
-    margin-left: 20px;
     font-size: 2em;
+    margin-left: 20px;
 }
 
 .venstre3 {
@@ -175,7 +207,7 @@ footer {
 
 /*styling af enkelte portfolio sider*/
 .tema_side h1 {
-    font-size: 5em;
+    font-size: 4em;
 }
 
 .tema_side h2 {
@@ -190,7 +222,7 @@ footer {
 }
 
 .tema_side:hover,h1,h2,h3,h4,p {
-    color: rgb(0, 0, 0);
+    color: black;
 }
 
 /*styling af tekst*/
@@ -208,7 +240,7 @@ footer {
 .stor_overskrift {
     font-size: 1.8em;
     margin-top: 10px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .stor_overskrift_speciel {
@@ -244,16 +276,16 @@ footer {
 
 /*styling af paragraphs på portfoliosider*/
 .mellemrum_under {
-    margin-bottom: -30px;
+    margin-bottom: 30px;
 }
 
 .mellemrum_under2 {
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 /*styling af billeder*/
 .lillebillede {
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
 .lillebillede2 {
@@ -262,12 +294,12 @@ footer {
 
 .lillebillede_speciel {
     margin-top: 13px;
-    margin-bottom: -50px;
+    margin-bottom: 30px;
 }
 
 .lillebillede2_speciel {
     margin-top: 13px;
-    margin-bottom: -50px;
+    margin-bottom: 30px;
 }
 
 .full_width_image img {
